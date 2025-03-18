@@ -12,3 +12,5 @@ if response.status_code == 200:
     print("Response JSON:", response.json())  # Print JSON data
 else:
     print("Failed to reach API.")
+
+print("Everything is good now")

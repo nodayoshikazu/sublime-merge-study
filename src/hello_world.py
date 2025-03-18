@@ -13,7 +13,18 @@ class HelloWorld:
         print("Hello!")
 
 
-# Create an instance of HelloWorld and call the hello method
-h = HelloWorld()
-h.hello("Yoshikazu")
-h.hello("Chan")
+    def test(self):
+        # Create an instance of HelloWorld and call the hello method
+        h = HelloWorld()
+        h.hello("Yoshikazu")
+        h.hello("Chan")
+
+    def hello_yoshi(self, name):
+        hw = HelloWorld()
+        print(f" Hello {name}")
+
+
+hw = HelloWorld()
+hw.hello("John")
+hw.test()
+hw.hello_yoshi("noda")

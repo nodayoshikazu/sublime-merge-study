@@ -13,9 +13,12 @@ class Fibb:
         elif n == 2:
             return 1
         else:
-            return fibonacci(n - 1) + fibonacci(n - 2)
+            return self.fibonacci(n - 1) + self.fibonacci(n - 2)
 
     def test(self):
         # Print first 10 Fibonacci numbers
         for i in range(1, 11):
-            print(fibonacci(i), end=" ")
+            print(self.fibonacci(i), end=" ")
+
+f = Fibb()
+f.test()
